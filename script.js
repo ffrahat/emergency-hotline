@@ -25,7 +25,7 @@ for(const callBtn of callBtns){
       
         totalBalance = aviableBalanceConvert - chargeRate;
         aviableBalance.innerText = totalBalance;
-        alert("calling : " + callingNum)
+        alert("calling : " + callingNum + " . . .");
 
     })
 }
