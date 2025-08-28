@@ -65,7 +65,7 @@
         <!-- Section 3 start -->
 
         <section class="section-2 md:px-[5%] px-[3%] py-5">
-            <div class="section2-container md:grid md:gap-4 md:grid-cols-4 block">
+            <div class="section2-container md:grid md:gap-4 md:grid-cols-4 block relative">
 
                 <div class="box p-5 row-start-0 md:mb-0 mb-5">
                     <div class="flex items-center justify-between cursor-pointer">
@@ -339,16 +339,20 @@
                 </div>
 
         
+<!-- History  -->
 
-
-                <div class="history col-start-4 col-end-5 row-start-1 row-end-4 my-box p-5 ">
+                <div class="history col-start-4 col-end-5 row-start-1 row-end-4 my-box p-5 relative overflow-scroll">
                     
-                    <div class="history-head flex items-center justify-between">
-                        <h1 class="p-1 font-bold flex-1"><i class="fa-solid fa-clock"></i> History</h1>
+                    <div class="history-head flex items-center justify-between mb-5">
+                            <h1 class="p-1 font-bold flex-1"><i class="fa-solid fa-clock"></i> History</h1>
 
-                     <button id="history-clear-btn" class="btn rounded-4xl  bg-[#00A63E] text-white mx-1 md:mx-2  text-[14px] md:text-[16px] flex-1 p-2">
-                        Clear History
-                    </button>
+                        <button id="history-clear-btn" class="btn rounded-4xl  bg-[#00A63E] text-white mx-1 md:mx-2  text-[14px] md:text-[16px] flex-1 p-2">
+                            Clear History
+                        </button>
+                    </div>
+
+                    <div  id="new-history-create">
+                           
                     </div>
 
                 </div>

@@ -1,5 +1,9 @@
 console.log('connected');
 
+// history 
+let callHistoryPush = [];
+console.log(callHistoryPush );
+
 
 // This is for Call Function 
 const callBtns = document.getElementsByClassName('call-btn');
@@ -10,8 +14,11 @@ for(const callBtn of callBtns){
     callBtn.addEventListener('click', function(event){
         console.log('CLickd');
         const grandParent = event.currentTarget.parentNode.parentNode;
+        console.log(grandParent);
         const callingNum = grandParent.children[1].children[2].innerText;
-        // console.log(callingNum);
+        console.log(callingNum);
+        const callingName = grandParent.children[1].children[0].innerText;
+        console.log(callingName);
 
         const aviableBalance = document.getElementById('aviable-balance');
         const aviableBalanceConvert = parseInt(aviableBalance.innerText);
@@ -27,8 +34,53 @@ for(const callBtn of callBtns){
         aviableBalance.innerText = totalBalance;
         alert("calling : " + callingNum + " . . .");
 
+
+        // History Start hare 
+
+        const data = {
+            name: callingName,
+            num: callingNum ,
+            date:new Date().toLocaleTimeString()
+        }
+        
+
+        callHistoryPush.push(data);
+
+        const newHistory = document.getElementById('new-history-create')
+        newHistory.innerText = "";
+      
+        
+        for(const myData of callHistoryPush ){
+            
+            const div = document.createElement('div')
+            div.innerHTML = `
+                <div class="call-history-containar flex items-center justify-between p-4 bg-gray-100 rounded-[7px] mb-5">
+                        <div class="history-containar-left">
+                            <h1 class="font-bold text-[18px]">${myData.name}</h1>
+                            <p class="text-gray-500" >${myData.num}</p>
+                        </div>
+
+                        <div class="history-right">
+                            <p>${myData.date}</p>
+                        </div>
+                    </div>
+                    
+            `
+
+
+            
+            newHistory.appendChild(div)
+
+            
+        }
+
+
+        
+        
     })
 }
+
+
 
 
 // This is for heart click function 
