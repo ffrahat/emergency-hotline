@@ -61,8 +61,20 @@ const heartLikes = document.getElementsByClassName('box-heart-like');
             let copyIncreaseConverted = parseInt((copyIncrease.innerText));
             let totalClickedCopy = copyIncreaseConverted + demoNumberCopy;
             copyIncrease.innerText = totalClickedCopy;
-            console.log(copyIncrease);
-            
+            // console.log(copyIncrease);
+            const grandParent = event.currentTarget.parentNode.parentNode;
+            // console.log(grandParent);
+            const copyingNum = grandParent.children[1].children[2].innerText;
+            console.log(copyingNum);
+
+            let textArea = document.createElement('textarea');
+            textArea.value = copyingNum;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            alert('Copyid Succesfully...');
+    
         })
     }
 
