@@ -1,7 +1,9 @@
 console.log('connected');
 
+
+// This is for Call Function 
 const callBtns = document.getElementsByClassName('call-btn');
-console.log(callBtns);
+// console.log(callBtns);
 
 for(const callBtn of callBtns){
     // console.log(callBtn);
@@ -27,3 +29,21 @@ for(const callBtn of callBtns){
 
     })
 }
+
+
+// This is for heart click function 
+
+const heartLikes = document.getElementsByClassName('box-heart-like');
+// console.log(heartLikes);
+
+    for(const heartLike of heartLikes){
+        heartLike.addEventListener('click', function(event){
+            const demoNumber = 1;
+            let heartIncrease = document.getElementById('heart-increase-show');
+            let heartIncreaseConverted = parseInt((heartIncrease.innerText));
+            let totalClickedHeart = heartIncreaseConverted + demoNumber;
+            heartIncrease.innerText = totalClickedHeart;
+            console.log(heartIncrease);
+            
+        })
+    }
