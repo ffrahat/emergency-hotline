@@ -17,9 +17,9 @@
     <!-- Tailwind Css Link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-[#ecfff0]">
     <!-- Heading Start Here -->
-     <header class="w-full py-2 px-[3%] sm:px-[5%]">
+     <header class="w-full py-2 px-[3%] sm:px-[5%] bg-white">
         <nav class="header-containar flex items-center justify-between">
             <div class="logo-side flex items-center gap-1 sm:gap-2 ">
                 <img class="w-[30px] h-[30px] sm:h-[70px] sm:w-[70px] mr-2" src="./assets/logo.png" alt="">
@@ -64,10 +64,10 @@
 
         <!-- Section 3 start -->
 
-        <section class="section-2">
+        <section class="section-2 sm:px-[5%] px-[3%] py-5">
             <div class="section2-container sm:grid sm:gap-4 sm:grid-cols-4 block">
 
-                <div class="box  p-5 border row-start-0 ">
+                <div class="box p-5 row-start-0 sm:mb-0 mb-5">
                     <div class="flex items-center justify-between cursor-pointer">
                         <div class="box-img">
                             <img class="w-[30px] mb-2" src="./assets/emergency.png" alt="">
@@ -99,7 +99,7 @@
                 
 
                 <!-- others box -->
-                 <div class="box  p-5 border">
+                 <div class="box  p-5  sm:mb-0 mb-5">
                     <div class="flex items-center justify-between cursor-pointer">
                         <div class="box-img">
                             <img class="w-[30px] mb-2" src="./assets/fire-service.png" alt="">
@@ -129,7 +129,7 @@
                 </div>
 
                 <!-- others box -->
-                 <div class="box  p-5 border">
+                 <div class="box  p-5  sm:mb-0 mb-5">
                     <div class="flex items-center justify-between cursor-pointer">
                         <div class="box-img">
                             <img class="w-[30px] mb-2" src="./assets/police.png" alt="">
@@ -159,7 +159,7 @@
                 </div>
 
                 <!-- others box -->
-                 <div class="box  p-5 border">
+                 <div class="box  p-5 sm:mb-0 mb-5">
                     <div class="flex items-center justify-between cursor-pointer">
                         <div class="box-img">
                             <img class="w-[30px] mb-2" src="./assets/ambulance.png" alt="">
@@ -189,7 +189,7 @@
                 </div>
 
                 <!-- others box -->
-                 <div class="box  p-5 border">
+                 <div class="box  p-5 sm:mb-0 mb-5">
                     <div class="flex items-center justify-between cursor-pointer">
                         <div class="box-img">
                             <img class="w-[30px] mb-2" src="./assets/woman-child.png" alt="">
@@ -219,7 +219,7 @@
                 </div>
 
                 <!-- others box -->
-                 <div class="box  p-5 border">
+                 <div class="box  p-5 sm:mb-0 mb-5">
                     <div class="flex items-center justify-between cursor-pointer">
                         <div class="box-img">
                             <img class="w-[30px] mb-2" src="./assets/ambulance.png" alt="">
@@ -249,7 +249,7 @@
                 </div>
 
                 <!-- others box -->
-                 <div class="box  p-5 border">
+                 <div class="box  p-5 sm:mb-0 mb-5">
                     <div class="flex items-center justify-between cursor-pointer">
                         <div class="box-img">
                             <img class="w-[30px] mb-2" src="./assets/electry.png" alt="">
@@ -279,7 +279,7 @@
                 </div>
 
                 <!-- others box -->
-                 <div class="box  p-5 border">
+                 <div class="box  p-5  sm:mb-0 mb-5">
                     <div class="flex items-center justify-between cursor-pointer">
                         <div class="box-img">
                             <img class="w-[30px] mb-2" src="./assets/brac.png" alt="">
@@ -309,7 +309,7 @@
                 </div>
 
                 <!-- others box -->
-                 <div class="box  p-5 border">
+                 <div class="box  p-5  sm:mb-0 mb-5">
                     <div class="flex items-center justify-between cursor-pointer">
                         <div class="box-img">
                             <img class="w-[30px] mb-2" src="./assets/Bangladesh-Railway.png" alt="">
@@ -341,9 +341,19 @@
         
 
 
-                <div class="history border col-start-4 col-end-5 row-start-1 row-end-4">
-                    <h1>This is History</h1>
+                <div class="history col-start-4 col-end-5 row-start-1 row-end-4 my-box p-5 ">
+                    
+                    <div class="history-head flex items-center justify-between">
+                        <h1 class="p-1 font-bold flex-1"><i class="fa-solid fa-clock"></i> History</h1>
+
+                     <button id="history-clear-btn" class="btn rounded-4xl  bg-[#00A63E] text-white mx-1 sm:mx-2  text-[14px] sm:text-[16px] flex-1 p-2">
+                        Clear History
+                    </button>
+                    </div>
+
                 </div>
+
+               
 
                 <!-- End -->
 
