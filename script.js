@@ -47,3 +47,24 @@ const heartLikes = document.getElementsByClassName('box-heart-like');
             
         })
     }
+
+
+    // This is for Copy Button 
+
+    const copyBtns = document.getElementsByClassName('copy-btn');
+    // console.log(copyBtns);
+
+        for(const copyBtn  of copyBtns){
+        copyBtn.addEventListener('click', function(event){
+            const demoNumberCopy = 1;
+            let copyIncrease = document.getElementById('copy-increase-show');
+            let copyIncreaseConverted = parseInt((copyIncrease.innerText));
+            let totalClickedCopy = copyIncreaseConverted + demoNumberCopy;
+            copyIncrease.innerText = totalClickedCopy;
+            console.log(copyIncrease);
+            
+        })
+    }
+
+
+
