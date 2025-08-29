@@ -27,13 +27,13 @@ for(const callBtn of callBtns){
         const chargeRate = parseInt(20);
 
         if(aviableBalanceConvert < 20){
-            alert('Please recharge and try again');
+            alert('Oops! Not enough coins ❌🪙');
             return;
         }
       
         totalBalance = aviableBalanceConvert - chargeRate;
         aviableBalance.innerText = totalBalance;
-        alert("calling  " + callingSubtitle + " " + callingNum + " . . .");
+        alert("📞 Calling  " + callingSubtitle + " " + callingNum + " . . .");
 
 
         // History Start hare 
