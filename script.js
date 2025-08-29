@@ -136,7 +136,8 @@ const heartLikes = document.getElementsByClassName('box-heart-like');
     const newHistory = document.getElementById('new-history-create');
 
     historyClearBtn.addEventListener('click', function(){
-        newHistory.innerHTML = "";
+        newHistory.innerText = "";
+        callHistoryPush.length = 0;
     })
         
 
