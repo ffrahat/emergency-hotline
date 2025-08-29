@@ -1,7 +1,7 @@
 
 ## Answer to the questions 06:
 
-    1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**? 
+### 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**? 
     Ans : 
 
     getElementById: এটা দিয়ে এইচটিএমএল এর ভিতরের আইডিকে জাভাস্ক্রিপ্টে সিলেক্ট করা যায় ।  
