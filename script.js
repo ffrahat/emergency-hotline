@@ -131,4 +131,14 @@ const heartLikes = document.getElementsByClassName('box-heart-like');
     }
 
 
+    // History Clear Button
+    const historyClearBtn = document.getElementById('history-clear-btn');
+    const newHistory = document.getElementById('new-history-create');
+
+    historyClearBtn.addEventListener('click', function(){
+        newHistory.innerHTML = "";
+    })
+        
+
+
 
