@@ -17,6 +17,7 @@ for(const callBtn of callBtns){
         // console.log(grandParent);
         const callingNum = grandParent.children[1].children[2].innerText;
         // console.log(callingNum);
+        const callingSubtitle = grandParent.children[1].children[1].innerText;
         const callingName = grandParent.children[1].children[0].innerText;
         // console.log(callingName);
 
@@ -32,7 +33,7 @@ for(const callBtn of callBtns){
       
         totalBalance = aviableBalanceConvert - chargeRate;
         aviableBalance.innerText = totalBalance;
-        alert("calling : " + callingNum + " . . .");
+        alert("calling  " + callingSubtitle + " " + callingNum + " . . .");
 
 
         // History Start hare 
@@ -56,7 +57,7 @@ for(const callBtn of callBtns){
             div.innerHTML = `
                 <div class="call-history-containar flex items-center justify-between p-4 bg-gray-100 rounded-[7px] mb-5">
                         <div class="history-containar-left">
-                            <h1 class="font-bold text-[18px]">${myData.name}</h1>
+                            <h1 class="font-bold text-[16px]">${myData.name}</h1>
                             <p class="text-gray-500" >${myData.num}</p>
                         </div>
 
