@@ -24,7 +24,10 @@ Step 3: AppendChild Whith Parent .
 
 
 3. What is **Event Bubbling** and how does it work?
-Ans: প্রতিটা টেগই পেরেন্ট থেকে চাইল্ড একটার সাথে আর একটা গাছের শেকড়ের মত যুক্ত থাকে । চাইল্ড
+Ans:
+ 
+প্রতিটা টেগই পেরেন্ট থেকে চাইল্ড একটার সাথে আর একটা গাছের শেকড়ের মত যুক্ত থাকে । চাইল্ড এ ক্লিক করে পেরেন্ট পাওয়া যায় আবার চাইল্ড এ ক্লিক কারে পেরেন্টকে পাওয়া যায় Event Bubbling এর মাধ্যমে । 
+
 
 
 4. What is **Event Delegation** in JavaScript? Why is it useful?
