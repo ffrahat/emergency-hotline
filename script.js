@@ -2,7 +2,7 @@ console.log('connected');
 
 // history 
 let callHistoryPush = [];
-console.log(callHistoryPush );
+// console.log(callHistoryPush );
 
 
 // This is for Call Function 
@@ -12,13 +12,13 @@ const callBtns = document.getElementsByClassName('call-btn');
 for(const callBtn of callBtns){
     // console.log(callBtn);
     callBtn.addEventListener('click', function(event){
-        console.log('CLickd');
+        // console.log('CLickd');
         const grandParent = event.currentTarget.parentNode.parentNode;
-        console.log(grandParent);
+        // console.log(grandParent);
         const callingNum = grandParent.children[1].children[2].innerText;
-        console.log(callingNum);
+        // console.log(callingNum);
         const callingName = grandParent.children[1].children[0].innerText;
-        console.log(callingName);
+        // console.log(callingName);
 
         const aviableBalance = document.getElementById('aviable-balance');
         const aviableBalanceConvert = parseInt(aviableBalance.innerText);
@@ -117,7 +117,7 @@ const heartLikes = document.getElementsByClassName('box-heart-like');
             const grandParent = event.currentTarget.parentNode.parentNode;
             // console.log(grandParent);
             const copyingNum = grandParent.children[1].children[2].innerText;
-            console.log(copyingNum);
+            // console.log(copyingNum);
 
             let textArea = document.createElement('textarea');
             textArea.value = copyingNum;
